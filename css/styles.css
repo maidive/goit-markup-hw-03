@@ -22,7 +22,14 @@ p {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .logo-italica {
@@ -45,6 +52,7 @@ p {
   text-transform: uppercase;
   margin-right: 76px;
   display: flex;
+  padding: 24px 0;
 }
 
 ul,
@@ -63,6 +71,10 @@ img {
 
 .address {
   font-style: normal;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-menu-list {
@@ -177,13 +189,13 @@ img {
   color: #2e2f42;
   display: flex;
   margin-bottom: 8px;
+  width: calc((100% - 72px) / 4);
 }
 
 .info-iteam {
   padding-top: 120px;
   padding-bottom: 120px;
   max-width: 264px;
-  width: calc((100% - 72px) / 4);
 }
 
 .info {
@@ -214,6 +226,7 @@ img {
 .container-team {
   border-radius: 0px 0px 4px 4px;
   padding: 32px 0;
+  width: calc((100% - 72px) / 4);
 }
 
 .team-list {
@@ -259,6 +272,7 @@ img {
 
 .portfolio-title-title {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio {
@@ -332,9 +346,4 @@ img {
 
 .logo-italica-footer {
   color: #f4f4fd;
-}
-
-.container-footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
