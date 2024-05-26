@@ -21,7 +21,7 @@ p {
   margin: 0;
 }
 
-.info-title {
+.visually-hidden {
   visibility: hidden;
 }
 
@@ -43,7 +43,7 @@ p {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  margin-right: 90px;
+  margin-right: 76px;
   display: flex;
 }
 
@@ -68,6 +68,10 @@ img {
 .header-menu-list {
   display: flex;
   gap: 40px;
+}
+
+.header-menu-iteam {
+  padding: 24px 0;
 }
 
 .header-menu-link {
@@ -98,6 +102,10 @@ img {
   padding-bottom: 24px;
 }
 
+.header-address-iteam {
+  padding: 24px 0px;
+}
+
 .header-address-link {
   font-weight: 400;
   font-size: 16px;
@@ -118,7 +126,7 @@ img {
 
 .hero {
   background: #2e2f42;
-  padding: 188px 472px 188px 472px;
+  padding: 188px 0px;
 }
 
 .hero-title {
@@ -144,6 +152,11 @@ img {
   margin-top: 48px;
   margin-left: 164px;
   margin-right: 163px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -170,6 +183,11 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
   max-width: 264px;
+  width: calc((100% - 72px) / 4);
+}
+
+.info {
+  padding: 120px 0px;
 }
 
 .info-iteam-text {
@@ -182,6 +200,7 @@ img {
 
 .team-iteam {
   margin-right: 24px;
+  background-color: #ffffff;
 }
 
 .team-image {
@@ -189,10 +208,17 @@ img {
 
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.container-team {
+  border-radius: 0px 0px 4px 4px;
+  padding: 32px 0;
 }
 
 .team-list {
   display: flex;
+  gap: 24px;
 }
 
 .team-title-title {
@@ -217,7 +243,8 @@ img {
   padding-bottom: 8px;
   padding-left: 49px;
   padding-right: 49px;
-  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -227,7 +254,11 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   margin-bottom: 120px;
-  background-color: #ffffff;
+  text-align: center;
+}
+
+.portfolio-title-title {
+  padding-top: 120px;
 }
 
 .portfolio {
@@ -238,7 +269,7 @@ img {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-top: 120px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -246,6 +277,14 @@ img {
   flex-wrap: wrap;
   border: #ffffff;
   padding-bottom: 120px;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.container-portfolio {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-subtetle {
@@ -254,6 +293,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -270,10 +310,12 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
 
 .footer {
   background: #2e2f42;
+  padding: 100px 0;
 }
 
 .logo-footer {
@@ -284,6 +326,8 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-italica-footer {
@@ -293,8 +337,4 @@ img {
 .container-footer {
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-.container-footer-text {
-  justify-content: center;
 }
